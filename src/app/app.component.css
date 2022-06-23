@@ -1,4 +1,5 @@
 body{
+    font-family: 'Secular One', sans-serif;
     margin-top: 5%;
     text-align: center;
     justify-content: space-around;
@@ -24,4 +25,7 @@ ion-content::-webkit-scrollbar {
     .feedcol{
         display: none;
     }
+}
+p{
+    margin: 0;
 }
