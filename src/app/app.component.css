@@ -1,0 +1,27 @@
+body{
+    margin-top: 5%;
+    text-align: center;
+    justify-content: space-around;
+}
+body img{
+    width: 300px;
+}
+body .smLinks img{
+    margin: 5px;
+    width: 30px;
+    filter: invert(13%) sepia(7%) saturate(11%) hue-rotate(81deg) brightness(106%) contrast(81%);
+}
+ion-content{
+    height: 800px;
+    --offset-bottom: auto!important;
+    --overflow: hidden;
+    overflow: auto;
+}
+ion-content::-webkit-scrollbar {
+    display: none;
+}
+@media only screen and (max-width: 750) {
+    .feedcol{
+        display: none;
+    }
+}
