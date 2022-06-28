@@ -6,6 +6,8 @@ import { DOCUMENT } from '@angular/common';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+
 export class AppComponent {
   title = 'gianfederspiel.ch';
 
@@ -19,4 +21,5 @@ export class AppComponent {
   toLinkedIn(){
     location.href = "https://www.linkedin.com/in/gian-federspiel-469841227/"
   }
+  
 }
