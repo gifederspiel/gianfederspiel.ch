@@ -1,19 +1,30 @@
 body{
     font-family: 'Secular One', sans-serif;
-    margin-top: 5%;
-    text-align: center;
-    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+.cardcol{
+    display: flex;
+    align-items: center;
+}
+.card{
+    margin-left: auto;
+    margin-right: auto;
+}
+.insta{
+    max-width: 900px;
 }
 body img{
-    width: 300px;
+    width: 400px;
 }
 body .smLinks img{
     margin: 5px;
-    width: 30px;
+    width: 50px;
     filter: invert(13%) sepia(7%) saturate(11%) hue-rotate(81deg) brightness(106%) contrast(81%);
 }
 ion-content{
-    height: 800px;
+    width: 600px;
+    height: 950px;
     --offset-bottom: auto!important;
     --overflow: hidden;
     overflow: auto;
@@ -21,11 +32,45 @@ ion-content{
 ion-content::-webkit-scrollbar {
     display: none;
 }
-@media only screen and (max-width: 750) {
-    .feedcol{
-        display: none;
-    }
+ion-row{
+    text-align: center;
 }
 p{
     margin: 0;
+    font-size: 25px;
 }
+@media only screen and (max-width: 1250px) {    
+    p{
+        font-size: 22.5px;
+    }
+    
+}
+@media only screen and (max-width: 990px) {
+    p{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 990px) {
+    body{
+        display: block;
+    }
+    body img{
+        width: 400px;
+    }
+
+}
+@media only screen and (max-width: 732px) {
+    body img{
+        width: 175px;
+    }
+    body .smLinks img{
+        margin: 2;
+        width: 20px;
+    }
+    p{
+        font-size: 10px;
+    }
+
+}
+
+

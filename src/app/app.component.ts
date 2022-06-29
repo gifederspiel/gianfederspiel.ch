@@ -7,9 +7,7 @@ import { DOCUMENT } from '@angular/common';
   styleUrls: ['./app.component.css']
 })
 
-
 export class AppComponent {
-  title = 'gianfederspiel.ch';
 
   toInstagram(){
     console.log("Test")
