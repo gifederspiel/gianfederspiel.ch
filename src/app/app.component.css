@@ -1,7 +1,11 @@
+* {
+    box-sizing: border-box;
+  }
 body{
     font-family: 'Secular One', sans-serif;
     display: flex;
     align-items: center;
+    height: fit-content;
 }
 .cardcol{
     display: flex;
@@ -13,6 +17,7 @@ body{
 }
 .insta{
     max-width: 900px;
+    margin-bottom: 300px;
 }
 body .logo{
     width: 400px;
@@ -28,12 +33,11 @@ ion-content{
     width: 600px;
     height: 950px;
     --offset-bottom: auto!important;
-    --overflow: hidden;
     overflow: auto;
 }
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
 }
 
 /* Track */
