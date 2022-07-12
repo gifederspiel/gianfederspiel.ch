@@ -14,13 +14,15 @@ body{
 .insta{
     max-width: 900px;
 }
-body img{
+body .logo{
     width: 400px;
+}
+body .profile{
+    height: 330px;
 }
 body .smLinks img{
     margin: 5px;
     width: 50px;
-    filter: invert(13%) sepia(7%) saturate(11%) hue-rotate(81deg) brightness(106%) contrast(81%);
 }
 ion-content{
     width: 600px;
@@ -29,8 +31,26 @@ ion-content{
     --overflow: hidden;
     overflow: auto;
 }
-ion-content::-webkit-scrollbar {
-    display: none;
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey; 
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(100, 100, 100); 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #919191; 
 }
 ion-row{
     text-align: center;
@@ -54,14 +74,17 @@ p{
     body{
         display: block;
     }
-    body img{
+    body .logo{
         width: 400px;
     }
 
 }
 @media only screen and (max-width: 732px) {
-    body img{
+    body .logo{
         width: 175px;
+    }
+    body .profile{
+        height: 120px;
     }
     body .smLinks img{
         margin: 2;
@@ -69,6 +92,9 @@ p{
     }
     p{
         font-size: 10px;
+    }
+    ::-webkit-scrollbar {
+        width: 6px;
     }
 
 }
