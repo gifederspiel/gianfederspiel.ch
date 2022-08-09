@@ -4,20 +4,10 @@
 body{
     font-family: 'Secular One', sans-serif;
     display: flex;
-    align-items: center;
-    height: fit-content;
 }
-.cardcol{
-    display: flex;
-    align-items: center;
-}
-.card{
-    margin-left: auto;
-    margin-right: auto;
-}
-.insta{
-    max-width: 900px;
-    margin-bottom: 300px;
+body .card{
+    margin: auto;
+    text-align: center;
 }
 body .logo{
     width: 400px;
@@ -29,78 +19,25 @@ body .smLinks img{
     margin: 5px;
     width: 50px;
 }
-ion-content{
-    width: 600px;
-    height: 950px;
-    --offset-bottom: auto!important;
-    overflow: auto;
-}
-/* width */
-::-webkit-scrollbar {
-    width: 8px;
+body .card p{
+  font-size: 24px;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 2px grey; 
-    border-radius: 10px;
+@media only screen and (max-width: 450px) {
+  body .logo{
+    width: 300px;
+  }
+  body .profile{
+    height: 250px;
+  }
+  body .smLinks img{
+    width: 40px;
+    margin: 4px;
+  }
+  body .card p{
+    font-size: 19px;
+  }
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: rgb(100, 100, 100); 
-    border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-background: #919191; 
-}
-ion-row{
-    text-align: center;
-}
-p{
-    margin: 0;
-    font-size: 25px;
-}
-@media only screen and (max-width: 1250px) {    
-    p{
-        font-size: 22.5px;
-    }
-    
-}
-@media only screen and (max-width: 990px) {
-    p{
-        font-size: 20px;
-    }
-}
-@media only screen and (max-width: 990px) {
-    body{
-        display: block;
-    }
-    body .logo{
-        width: 400px;
-    }
-
-}
-@media only screen and (max-width: 732px) {
-    body .logo{
-        width: 175px;
-    }
-    body .profile{
-        height: 120px;
-    }
-    body .smLinks img{
-        margin: 2;
-        width: 20px;
-    }
-    p{
-        font-size: 10px;
-    }
-    ::-webkit-scrollbar {
-        width: 6px;
-    }
-
-}
 
 
