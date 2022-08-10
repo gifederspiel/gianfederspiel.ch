@@ -20,6 +20,7 @@ body .smLinks img{
     width: 50px;
 }
 body .card p{
+  margin-top: 0;
   font-size: 24px;
 }
 
