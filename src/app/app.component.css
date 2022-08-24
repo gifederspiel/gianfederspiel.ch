@@ -5,37 +5,44 @@ body{
     font-family: 'Secular One', sans-serif;
     display: flex;
 }
-body .card{
+.card{
     margin: auto;
     text-align: center;
 }
-body .logo{
+.logo{
     width: 400px;
 }
-body .profile{
+.profile{
     height: 330px;
 }
-body .smLinks img{
+.smLinks img{
     margin: 5px;
-    width: 50px;
+    height: 50px;
 }
-body .card p{
+.card p{
   margin-top: 0;
   font-size: 24px;
 }
+.projects{
+  display: block;
+}
+.projectsHeader{
+  margin-top: 5%;
+  display: flex;
+}
 
 @media only screen and (max-width: 450px) {
-  body .logo{
+  .logo{
     width: 300px;
   }
-  body .profile{
+  .profile{
     height: 250px;
   }
-  body .smLinks img{
-    width: 40px;
+  .smLinks img{
+    height: 40px;
     margin: 4px;
   }
-  body .card p{
+  .card p{
     font-size: 19px;
   }
 }

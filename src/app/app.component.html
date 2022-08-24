@@ -10,16 +10,48 @@
   <title></title>
 </head>
 <body>
-  <div class="card">
-    <img class="profile" src="assets/profile.png"><br>
-    <img class="logo" src="assets/logo.png"><br>
-    <div class="smLinks">
-      <img (click)="toInstagram()" src="assets/logo-instagram.svg">
-      <img (click)="toGithub()" src="assets/logo-github.svg">
-      <img (click)="toLinkedIn()" src="assets/logo-linkedin.svg">
-    </div>
-    <p>apprentice softwaredeveloper</p>
-  </div>
+  <ion-slides mode="ios" pager="ios" scrollbar="ios" effect="slide" direction="vertical">
+    <ion-slide>
+      <div class="card">
+        <ion-img class="profile" [src]="picUrl"></ion-img>
+        <img class="logo" src="assets/logo.png"><br>
+        <div class="smLinks">
+          <img (click)="toInstagram()" src="assets/logo-instagram.svg">
+          <img (click)="toMail()" src="assets/logo-mail.png">
+          <img (click)="toLinkedIn()" src="assets/logo-linkedin.svg">
+        </div>
+      </div>
+    </ion-slide>
+    <ion-slide class="projects">
+      <div class="projectHeader"></div>
+      <div (click)="toGithub()" class="smLinks projectsHeader">
+        <img src="assets/logo-github.svg">
+        <h2>@gifederspiel</h2>
+      </div>
+      <ion-card (click)="toKapaplaner()">
+        <ion-card-header>
+          <ion-card-title>Kapazitätsplaner</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+        </ion-card-content>
+      </ion-card>
+      <ion-card (click)="toGamelauncher">
+        <ion-card-header>
+          <ion-card-title>Gamelauncher</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+        </ion-card-content>
+      </ion-card>
+      <ion-card (click)="toGianFederspiel()">
+        <ion-card-header>
+          <ion-card-title>gianfederspiel.ch</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+  
 </body>
 <router-outlet></router-outlet>
 
