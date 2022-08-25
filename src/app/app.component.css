@@ -15,9 +15,9 @@ body{
 .profile{
     height: 330px;
 }
-.smLinks img{
-    margin: 5px;
-    height: 50px;
+.smLinks ion-icon{
+  font-size: 50px;
+  margin: 5px;
 }
 .card p{
   margin-top: 0;
@@ -47,8 +47,8 @@ ion-list-header{
   .profile{
     height: 250px;
   }
-  .smLinks img{
-    height: 40px;
+  .smLinks ion-icon{
+    font-size: 40px;
     margin: 4px;
   }
   .card p{

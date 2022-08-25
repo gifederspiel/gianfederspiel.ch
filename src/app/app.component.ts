@@ -31,6 +31,9 @@ export class AppComponent {
   toGianFederspiel(){
     location.href ="https://github.com/gifederspiel/gianfederspiel.ch"
   }
+  onReload(){
+    location.reload()
+  }
   picUrl = "assets/profile" + String(Math.floor(Math.random() * 5) + 1) + ".png"
 
 }

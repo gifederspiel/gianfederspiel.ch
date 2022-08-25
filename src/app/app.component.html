@@ -13,12 +13,13 @@
   <ion-slides slidesPerView="3" mode="ios" pager="ios" scrollbar="ios" effect="slide" >
     <ion-slide>
       <div class="card">
+        <ion-icon style="font-size: 30px;" (click)="onReload()" name="refresh-outline"></ion-icon>
         <ion-img class="profile" [src]="picUrl"></ion-img>
         <img class="logo" src="assets/logo.png"><br>
         <div class="smLinks">
-          <img (click)="toInstagram()" src="assets/logo-instagram.svg">
-          <img (click)="toGithub()" src="assets/logo-github.svg">
-          <img (click)="toLinkedIn()" src="assets/logo-linkedin.svg">
+          <ion-icon (click)="toInstagram()" name="logo-instagram"></ion-icon>
+          <ion-icon (click)="toGithub()" name="logo-github"></ion-icon>
+          <ion-icon (click)="toLinkedIn()" name="logo-linkedin"></ion-icon>
         </div>
       </div>
     </ion-slide>
