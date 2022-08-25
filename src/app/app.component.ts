@@ -7,6 +7,7 @@ import { DOCUMENT } from '@angular/common';
   styleUrls: ['./app.component.css'],
 })
 
+
 export class AppComponent {
 
   toInstagram(){
@@ -32,8 +33,16 @@ export class AppComponent {
     location.href ="https://github.com/gifederspiel/gianfederspiel.ch"
   }
   onReload(){
-    location.reload()
+    if(this.picNumber > 0 && this.picNumber < 5){
+      this.picNumber++
+      this.picUrl = "assets/profile" + String(this.picNumber) + ".png"
+    }
+    else{
+      this.picNumber = 1
+      this.picUrl = "assets/profile" + String(this.picNumber) + ".png"
+    }
   }
-  picUrl = "assets/profile" + String(Math.floor(Math.random() * 5) + 1) + ".png"
+  picNumber = 1
+  picUrl = "assets/profile" + String(this.picNumber) + ".png"
 
 }
