@@ -10,48 +10,60 @@
   <title></title>
 </head>
 <body>
-  <ion-slides mode="ios" pager="ios" scrollbar="ios" effect="slide" direction="vertical">
+  <ion-slides slidesPerView="4" mode="ios" pager="ios" scrollbar="ios" effect="slide" >
     <ion-slide>
       <div class="card">
         <ion-img class="profile" [src]="picUrl"></ion-img>
         <img class="logo" src="assets/logo.png"><br>
         <div class="smLinks">
           <img (click)="toInstagram()" src="assets/logo-instagram.svg">
-          <img (click)="toMail()" src="assets/logo-mail.png">
+          <img (click)="toGithub()" src="assets/logo-github.svg">
           <img (click)="toLinkedIn()" src="assets/logo-linkedin.svg">
         </div>
       </div>
     </ion-slide>
+
+    <!-- Slide -->
+
     <ion-slide class="projects">
-      <div class="projectHeader"></div>
-      <div (click)="toGithub()" class="smLinks projectsHeader">
-        <img src="assets/logo-github.svg">
-        <h2>@gifederspiel</h2>
+      <div class="projectsHeader">
+        <h1>Me</h1>
       </div>
-      <ion-card (click)="toKapaplaner()">
-        <ion-card-header>
-          <ion-card-title>Kapazitätsplaner</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-        </ion-card-content>
-      </ion-card>
-      <ion-card (click)="toGamelauncher">
-        <ion-card-header>
-          <ion-card-title>Gamelauncher</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-        </ion-card-content>
-      </ion-card>
-      <ion-card (click)="toGianFederspiel()">
-        <ion-card-header>
-          <ion-card-title>gianfederspiel.ch</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-        </ion-card-content>
-      </ion-card>
+
+      <!-- About -->
+      <ion-list mode="ios" inset="true">
+        <ion-list-header>
+          <ion-label>About</ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-label><ion-icon name="man-outline"></ion-icon> 18 Years</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label><ion-icon name="pin-outline"></ion-icon> Nottwil</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label><ion-icon name="code-outline"></ion-icon> Apprentice Software Developer</ion-label>
+        </ion-item>
+      </ion-list>
+
+      <!-- Projects -->
+      <ion-list mode="ios" inset="true">
+        <ion-list-header>
+          <ion-label>Projects</ion-label>
+        </ion-list-header>
+        <ion-item (click)="toKapaplaner()">
+          <ion-label>Kapazitätsplaner <ion-icon name="arrow-forward-outline"></ion-icon></ion-label>
+        </ion-item>
+        <ion-item (click)="toGianFederspiel()">
+          <ion-label>gianfederspiel.ch <ion-icon name="arrow-forward-outline"></ion-icon></ion-label>
+        </ion-item>
+        <ion-item (click)="toGamelauncher()">
+          <ion-label>Gamelauncher <ion-icon name="arrow-forward-outline"></ion-icon></ion-label>
+        </ion-item>
+      </ion-list>
     </ion-slide>
   </ion-slides>
-  
+
 </body>
 <router-outlet></router-outlet>
 
