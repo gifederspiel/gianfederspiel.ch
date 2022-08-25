@@ -10,7 +10,7 @@
   <title></title>
 </head>
 <body>
-  <ion-slides slidesPerView="4" mode="ios" pager="ios" scrollbar="ios" effect="slide" >
+  <ion-slides slidesPerView="3" mode="ios" pager="ios" scrollbar="ios" effect="slide" >
     <ion-slide>
       <div class="card">
         <ion-img class="profile" [src]="picUrl"></ion-img>
@@ -63,9 +63,11 @@
       </ion-list>
 
       <!-- Contact -->
-      <ion-button (click)="toMail()" color="dark" shape="round">
-		    Contact
-	    </ion-button>
+      <ion-fab vertical="top" horizontal="end" slot="fixed">
+        <ion-fab-button color="dark">
+          <ion-icon name="mail-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
     </ion-slide>
   </ion-slides>
 
