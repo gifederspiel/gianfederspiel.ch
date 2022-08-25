@@ -37,6 +37,9 @@ body{
 ion-list-header ion-label{
   margin-top: 10px;
 }
+ion-list-header{
+  padding: 0;
+}
 @media only screen and (max-width: 450px) {
   .logo{
     width: 300px;
