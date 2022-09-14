@@ -16,7 +16,7 @@ export class AppComponent{
       {name: 'author', content: 'Gian Federspiel'},
       {name: 'keywords', content: 'Gian Federspiel'},
     ]);
-    this.title.setTitle('Home Page')
+    this.title.setTitle('Gian Federspiel')
   }
 
   toInstagram(){
