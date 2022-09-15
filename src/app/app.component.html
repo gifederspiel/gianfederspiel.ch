@@ -22,48 +22,10 @@
     <!-- Slide -->
 
     <ion-slide class="projects">
-      <div class="projectsHeader">
-        <h1>Me</h1>
-      </div>
-
-      <!-- About -->
-      <ion-list mode="ios" inset="true">
-        <ion-list-header>
-          <ion-label>About</ion-label>
-        </ion-list-header>
-        <ion-item>
-          <ion-label><ion-icon name="man-outline"></ion-icon> 18 Years</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label><ion-icon name="pin-outline"></ion-icon> Lucerne, Nottwil</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label><ion-icon name="code-outline"></ion-icon> Apprentice Software Developer</ion-label>
-        </ion-item>
-      </ion-list>
-
-      <!-- Projects -->
-      <ion-list mode="ios" inset="true">
-        <ion-list-header>
-          <ion-label>Projects</ion-label>
-        </ion-list-header>
-        <ion-item (click)="toKapaplaner()">
-          <ion-label>Kapazitätsplaner <ion-icon name="arrow-forward-outline"></ion-icon></ion-label>
-        </ion-item>
-        <ion-item (click)="toGianFederspiel()">
-          <ion-label>gianfederspiel.ch <ion-icon name="arrow-forward-outline"></ion-icon></ion-label>
-        </ion-item>
-        <ion-item (click)="toGamelauncher()">
-          <ion-label>Gamelauncher <ion-icon name="arrow-forward-outline"></ion-icon></ion-label>
-        </ion-item>
-      </ion-list>
-
-      <!-- Contact -->
-      <ion-fab vertical="top" horizontal="end" slot="fixed">
-        <ion-fab-button (click)="toMail()" color="dark">
-          <ion-icon name="mail-outline"></ion-icon>
-        </ion-fab-button>
-      </ion-fab>
+      <app-projects-header></app-projects-header>
+      <app-about></app-about>
+      <app-projects></app-projects>
+      <app-contact></app-contact>
     </ion-slide>
   </ion-slides>
 

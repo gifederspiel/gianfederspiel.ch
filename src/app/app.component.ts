@@ -18,17 +18,4 @@ export class AppComponent{
     ]);
     this.title.setTitle('Gian Federspiel')
   }
-  toMail(){
-    location.href="mailto:gian.federspiel@bluewin.ch?subject=Kontakt"
-  }
-  toKapaplaner(){
-    location.href = "https://github.com/PI-Kapazitatsplaner/Kapazitatsplaner"
-  }
-  toGamelauncher(){
-        location.href ="https://github.com/gifederspiel/Fancy-BLJ-Gamelauncher/tree/master"
-  }
-  toGianFederspiel(){
-    location.href ="https://github.com/gifederspiel/gianfederspiel.ch"
-  }
-
 }
