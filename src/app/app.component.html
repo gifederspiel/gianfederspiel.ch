@@ -10,17 +10,12 @@
   <title></title>
 </head>
 <body>
-  <ion-slides slidesPerView="3" mode="ios" pager="ios" scrollbar="ios" effect="slide" >
-    <ion-slide>
-      <div class="card">
-        <ion-icon style="font-size: 30px;" (click)="onReload()" name="refresh-outline"></ion-icon>
-        <ion-img class="profile" [src]="picUrl"></ion-img>
-        <img class="logo" src="assets/logo.png"><br>
-        <div class="smLinks">
-          <ion-icon (click)="toInstagram()" name="logo-instagram"></ion-icon>
-          <ion-icon (click)="toGithub()" name="logo-github"></ion-icon>
-          <ion-icon (click)="toLinkedIn()" name="logo-linkedin"></ion-icon>
-        </div>
+  <ion-slides slidesPerView="2" mode="ios" pager="ios" scrollbar="ios" effect="slide" >
+    <ion-slide class="card">
+      <div>
+        <app-profile-picture></app-profile-picture>
+        <app-logo></app-logo>
+        <app-social-media-links></app-social-media-links>
       </div>
     </ion-slide>
 

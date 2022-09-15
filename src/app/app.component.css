@@ -9,20 +9,7 @@ body{
     margin: auto;
     text-align: center;
 }
-.logo{
-    width: 400px;
-}
-.profile{
-    height: 330px;
-}
-.smLinks ion-icon{
-  font-size: 50px;
-  margin: 5px;
-}
-.card p{
-  margin-top: 0;
-  font-size: 24px;
-}
+
 .projects{
   display: block;
 }
