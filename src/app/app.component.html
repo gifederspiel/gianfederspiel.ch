@@ -10,7 +10,22 @@
   <title></title>
 </head>
 <body>
-  <ion-slides slidesPerView="2" mode="ios" pager="ios" scrollbar="ios" effect="slide" >
+  <swiper [slidesPerView] = "slidesPerView" [pagination]="pagination">
+    <ng-template swiperSlide class="card">
+      <div>
+        <app-profile-picture></app-profile-picture>
+        <app-logo></app-logo>
+        <app-social-media-links></app-social-media-links>
+      </div>
+    </ng-template>
+
+    <ng-template swiperSlide class="projects">
+      <app-about></app-about>
+      <app-projects></app-projects>
+      <app-contact></app-contact>
+    </ng-template>
+  </swiper>
+  <!--<ion-slides slidesPerView="2" mode="ios" pager="ios" scrollbar="ios" effect="slide">
     <ion-slide class="card">
       <div>
         <app-profile-picture></app-profile-picture>
@@ -19,15 +34,13 @@
       </div>
     </ion-slide>
 
-    <!-- Slide -->
-
     <ion-slide class="projects">
       <app-projects-header></app-projects-header>
       <app-about></app-about>
       <app-projects></app-projects>
       <app-contact></app-contact>
     </ion-slide>
-  </ion-slides>
+  </ion-slides>-->
 
 </body>
 <router-outlet></router-outlet>
