@@ -15,8 +15,8 @@ export class ProjectsComponent implements OnInit {
   toKapaplaner(){
     location.href = "https://github.com/PI-Kapazitatsplaner/Kapazitatsplaner"
   }
-  toGamelauncher(){
-        location.href ="https://github.com/gifederspiel/Fancy-BLJ-Gamelauncher/tree/master"
+  toGFArchive(){
+        location.href ="https://github.com/gifederspiel/gf_archive"
   }
   toGianFederspiel(){
     location.href ="https://github.com/gifederspiel/gianfederspiel.ch"
