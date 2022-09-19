@@ -18,7 +18,7 @@ export class AppComponent{
 
   constructor(private meta: Meta,private title: Title){
     this.meta.addTags([
-      {name: 'description', content: 'Gian Federspiel website'},
+      {name: 'description', content: 'Gian Federspiel, its me'},
       {name: 'author', content: 'Gian Federspiel'},
       {name: 'keywords', content: 'Gian Federspiel'},
     ]);
