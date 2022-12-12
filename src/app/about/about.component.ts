@@ -15,9 +15,7 @@ export class AboutComponent implements OnInit {
   age = calcAge();
 
 }
-function calcAge() {
-  console.log(new Date('2004-06-08'));
-  
+function calcAge() {  
   var timeDiff = Math.abs(Date.now() - +new Date('2004-06-08'));
   var age = Math.floor((timeDiff / (1000 * 3600 * 24))/365);
   return age;
