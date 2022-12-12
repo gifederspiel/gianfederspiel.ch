@@ -5,6 +5,10 @@
 body{
     font-family: 'Secular One', sans-serif;
     display: flex;
+    background-image: url(../assets/room_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .card{
     margin: auto;
@@ -14,6 +18,7 @@ body{
   margin: auto;
   display: block;
 }
+
 .swiper{
   width: 80%;
 }
