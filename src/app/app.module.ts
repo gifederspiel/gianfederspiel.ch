@@ -9,9 +9,9 @@ import { LogoComponent } from './logo/logo.component';
 import { SocialMediaLinksComponent } from './social-media-links/social-media-links.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { ContactComponent } from './contact/contact.component';
 
 import { SwiperModule } from 'swiper/angular';
+import { Projectsv2Component } from './projectsv2/projectsv2.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { SwiperModule } from 'swiper/angular';
     SocialMediaLinksComponent,
     AboutComponent,
     ProjectsComponent,
-    ContactComponent,
+    Projectsv2Component,
   ],
   imports: [
     BrowserModule,

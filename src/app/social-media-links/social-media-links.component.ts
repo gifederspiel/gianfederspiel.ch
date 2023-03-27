@@ -22,4 +22,7 @@ export class SocialMediaLinksComponent implements OnInit {
   toGithub(){
     location.href = "https://github.com/gifederspiel"
   }
+  toMail(){
+    location.href="mailto:gian.federspiel@bluewin.ch?subject=Kontakt"
+  }
 }

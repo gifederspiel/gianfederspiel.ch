@@ -1,0 +1,17 @@
+ion-card{
+	border: 2px solid black;
+}
+ion-card:hover {
+	background-color: #f5f5f5; /* change this to the desired background color */
+	box-shadow: 0;
+	border: 2px solid black;
+}
+ion-grid{
+	background-color: white;
+	border-radius: 10px;
+	padding: 10px;
+	border: 2px solid black;
+}
+img{
+	height: 50px;
+}
