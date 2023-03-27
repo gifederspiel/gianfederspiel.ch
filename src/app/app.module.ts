@@ -12,6 +12,7 @@ import { ProjectsComponent } from './projects/projects.component';
 
 import { SwiperModule } from 'swiper/angular';
 import { Projectsv2Component } from './projectsv2/projectsv2.component';
+import { Aboutv2Component } from './aboutv2/aboutv2.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { Projectsv2Component } from './projectsv2/projectsv2.component';
     AboutComponent,
     ProjectsComponent,
     Projectsv2Component,
+    Aboutv2Component,
   ],
   imports: [
     BrowserModule,

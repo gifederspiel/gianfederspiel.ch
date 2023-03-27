@@ -1,0 +1,35 @@
+.container{
+	background-color: white;
+	border-radius: 10px;
+	padding: 10px;
+	border: 2px solid black;
+	margin: 10px;
+}
+img{
+	height: 50px;
+}
+#image-container {
+	position: relative;
+	height: 200px;
+  }
+  
+  .random-image {
+	position: absolute;
+	top: calc(var(--y) * 100%);
+	left: calc(var(--x) * 100%);
+  }
+  
+  .random-image:nth-child(1) {
+	--x: 0.6;
+	--y: 0.2;
+  }
+  
+  .random-image:nth-child(2) {
+	--x: 0.2;
+	--y: 0.5;
+  }
+  
+  .random-image:nth-child(3) {
+	--x: 0.7;
+	--y: 0.7;
+}
