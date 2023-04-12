@@ -12,6 +12,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 
 import { SwiperModule } from 'swiper/angular';
+import { PinterestComponent } from './pinterest/pinterest.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { SwiperModule } from 'swiper/angular';
     AboutComponent,
     ProjectsComponent,
     ContactComponent,
+    PinterestComponent,
   ],
   imports: [
     BrowserModule,
