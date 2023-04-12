@@ -18,7 +18,10 @@ body{
   margin: auto;
   display: block;
 }
-
+.pinterest{
+  margin: auto;
+  display: block;
+}
 .swiper{
   width: 80%;
 }
