@@ -11,18 +11,20 @@ body{
     background-size: cover;
 }
 .card{
-    margin: auto;
-    text-align: center;
-    background-color: rgba(224, 224, 224, 0.753);
+  margin: auto;
+  text-align: center;
+  background-color: rgba(161, 161, 161, 0.61);
+  border: 10px;
 }
 .projects{
   margin: auto;
   display: block;
+  background-color: rgba(161, 161, 161, 0.61);
+  border: 10px;
 }
 .pinterest{
   margin: auto;
   display: block;
-  background-color: rgba(224, 224, 224, 0.753);
 }
 .swiper{
   width: 80%;
