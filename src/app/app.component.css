@@ -5,17 +5,14 @@
 body{
     font-family: 'Secular One', sans-serif;
     display: flex;
-    background-image: url(../assets/room_bg3.png);
+    background-image: url(../assets/room_bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .card{
-  margin: auto;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.61);
-  border-radius: 10px;
-  margin: 10px;
+    margin: auto;
+    text-align: center;
 }
 .projects{
   margin: auto;

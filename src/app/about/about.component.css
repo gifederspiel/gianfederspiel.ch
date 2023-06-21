@@ -3,5 +3,6 @@ ion-list-header ion-label{
 }
 ion-list{
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.801);
+  box-shadow: 12px 12px rgba(190, 190, 190, 0.5);
 }
+
