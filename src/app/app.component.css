@@ -13,14 +13,13 @@ body{
 .card{
   margin: auto;
   text-align: center;
-  background-color: rgba(161, 161, 161, 0.61);
-  border: 10px;
+  background-color: rgba(219, 219, 219, 0.61);
+  border-radius: 10px;
+  padding: 30px;
 }
 .projects{
   margin: auto;
   display: block;
-  background-color: rgba(161, 161, 161, 0.61);
-  border: 10px;
 }
 .pinterest{
   margin: auto;
