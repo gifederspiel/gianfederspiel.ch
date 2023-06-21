@@ -5,7 +5,7 @@
 body{
     font-family: 'Secular One', sans-serif;
     display: flex;
-    background-image: url(../assets/room_bg4.png);
+    background-image: url(../assets/room_bg3.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,6 +13,7 @@ body{
 .card{
     margin: auto;
     text-align: center;
+    background-color: rgba(224, 224, 224, 0.753);
 }
 .projects{
   margin: auto;
@@ -21,6 +22,7 @@ body{
 .pinterest{
   margin: auto;
   display: block;
+  background-color: rgba(224, 224, 224, 0.753);
 }
 .swiper{
   width: 80%;
