@@ -22,4 +22,7 @@ export class SocialMediaLinksComponent implements OnInit {
   toGithub(){
     location.href = "https://github.com/gifederspiel"
   }
+  toYoutube(){
+    location.href = "https://youtube.com/@gianfederspiel"
+  }
 }
