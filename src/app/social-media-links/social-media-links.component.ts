@@ -25,4 +25,7 @@ export class SocialMediaLinksComponent implements OnInit {
   toYoutube(){
     location.href = "https://youtube.com/@gianfederspiel"
   }
+  toDepop(){
+    location.href = "https://www.depop.com/gianfed/"
+  }
 }
